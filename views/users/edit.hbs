@@ -1,0 +1,13 @@
+<form action="/users/{{user.id}}/edit" method="POST">
+    <div class="form-floating mb-3">
+        <input value="{{user.name}}" name="name" type="text" class="form-control" placeholder="Name">
+        <label for="floatingInput">Name</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input value="{{user.email}}" name="email" type="email" class="form-control" placeholder="Email">
+        <label for="floatingInput">Email</label>
+    </div>
+        
+    <button type="submit" class="btn btn-primary" >Edit</button>
+</form>
